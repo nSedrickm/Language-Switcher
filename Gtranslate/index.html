@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Language Switch</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand font-weight-bold" href="">Language Switcher</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <!--
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Language
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">French</a>
+                        <a class="dropdown-item" href="#">Spanish</a>
+                    </div>
+                </li>
+            </ul>
+        -->
+        </div>
+    </nav>
+
+    <div class="border p-5 text-justify">
+        <ul class="nav nav-pills nav-fill mb-3 border border-primary" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true">GTranslate</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">GTranslate Customizable</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                    aria-controls="pills-contact" aria-selected="false">Contact</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                <div class="py-4">
+                    <!-- Google Translate embed code -->
+                    <!-- GTranslate: https://gtranslate.io/ -->
+
+                    <style type="text/css">
+                    <!--
+                    #goog-gt-tt {
+                        display: none !important;
+                    }
+
+                    .goog-te-banner-frame {
+                        display: none !important;
+                    }
+
+                    .goog-te-menu-value:hover {
+                        text-decoration: none !important;
+                    }
+
+                    .goog-te-gadget-icon {
+                        background-image: url(//gtranslate.net/flags/gt_logo_19x19.gif) !important;
+                        background-position: 0 0 !important;
+                    }
+
+                    body {
+                        top: 0 !important;
+                    }
+
+                    </style>
+                    <div id="google_translate_element"></div>
+                    <script type="text/javascript">function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({
+                                pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, includedLanguages: ''
+                            }
+
+                                , 'google_translate_element');
+                        }
+
+                    </script>
+                    <script type="text/javascript"
+                    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                    </script>
+                </div>
+
+                <h2>Lorem Ipsum</h2>
+                <p>The Lorem Ipsum is simply dummy text of the composition and layout before printing.
+                    Lorem Ipsum has been the standard false text of the printing press since the 1500s, when an
+                    anonymous
+                    printer assembled pieces of text together to make a sample text font book. It has not only
+                    survived five
+                    centuries, but has also adapted to computer office automation, without its content being
+                    modified. It was
+                    popularized in the 1960s with the sale of Letraset sheets containing passages from the Lorem
+                    Ipsum, and,
+                    more recently, by its inclusion in text layout applications, such as Aldus PageMaker.</p>
+                <p>
+                    It has long been known that working with readable and meaningful text is distracting and
+                    prevents you from
+                    focusing on the layout itself. The advantage of Lorem Ipsum over a generic text like 'Du texte.
+                    Of text. Of
+                    text.' is that it has a more or less normal distribution of letters, and in any case comparable
+                    with that of
+                    standard French. Many layout software suites or website publishers have made Lorem Ipsum their
+                    default fake
+                    text, and a search for 'Lorem Ipsum' will take you to many sites that are still in their
+                    development phase.
+                    construction. Several versions have appeared over time, sometimes by accident, often
+                    intentionally (just to
+                    add little winks, even embarrassing sentences).
+                </p>
+
+
+            </div>
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
